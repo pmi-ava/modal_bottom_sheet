@@ -18,7 +18,8 @@ const Curve _modalBottomSheetCurve = _decelerateEasing;
 const Duration _bottomSheetDuration = Duration(milliseconds: 400);
 const double _minFlingVelocity = 500.0;
 const double _closeProgressThreshold = 0.6;
-const double _willPopThreshold = 0.8;
+// manual change for bug: https://github.com/jamesblasco/modal_bottom_sheet/issues/160
+const double _willPopThreshold = 0.97;
 
 typedef WidgetWithChildBuilder = Widget Function(
     BuildContext context, Animation<double> animation, Widget child);
